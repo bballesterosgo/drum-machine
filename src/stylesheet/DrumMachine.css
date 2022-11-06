@@ -22,3 +22,14 @@
   cursor: pointer;
   user-select: none;
 }
+.drum-pad{
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  border-radius: 5px;
+  padding-top: 35px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
