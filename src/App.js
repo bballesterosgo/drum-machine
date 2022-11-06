@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import DrumMachine from './components/DrumMachine';
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <div className='title-logo-container'>
         <h1 className='title'>Drum Machine</h1>
       </div>
-      
+      <DrumMachine />  
     </div>
   );
 }

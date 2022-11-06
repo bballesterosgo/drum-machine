@@ -1,0 +1,15 @@
+.constrols-container{
+  align-items: center;
+  justify-content: center;
+}
+
+.display{
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  padding: 11px;
+  margin: 1px solid #888;
+  padding-right: 11px 30px 11px 11px;
+}
