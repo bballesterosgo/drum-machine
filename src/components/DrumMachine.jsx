@@ -1,5 +1,6 @@
-import React from "react";
+import React,{ useState } from "react";
 import Display from "./Display";
+import DrumPad from "./DrumPad";
 
 import '../stylesheet/DrumMachine.css';
 
@@ -53,8 +54,28 @@ const drumPads = [
 
 function DrumMachine (){
 
+  const [currentSong,setCurrentSong] = useState('');
+
+  const handleClick = song => {
+    setCurrentSong(song);
+  };
+
   return <div id='drum-machine' className='drum-machine-container'>
-      <Display />
+      <Display 
+        currentSong={currentSong}
+      />
+      <div className='drum-pad-container'>
+        {drumPads.map(item => (
+          <DrumPad 
+            song={item.song}
+            key={item.key}
+            drumKey={item.key}
+            url={item.url}
+            handleKeydown={() => handleClick(item.song)}
+            onClick={() => handleClick(item.song)}
+          />
+        ))}
+      </div>
   </div>
 }
 

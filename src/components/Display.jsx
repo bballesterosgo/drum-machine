@@ -2,9 +2,9 @@ import React from "react";
 
 import '../stylesheet/Display.css'
 
-function Display (){
+function Display ({ currentSong }){
   return <div id='display' className='controls-container'>
-    <p className='display' id='display'>Drum Machine</p>
+    <p className='display' id='display'>{currentSong}</p>
   </div>
 }
 
